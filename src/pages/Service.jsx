@@ -4,7 +4,7 @@ const Service = () => {
   return (
     <>
       <div className="service m-3">
-        <h1 className="service-headline">Services</h1>
+        <h1 className="hservice-eadline text-center">Services</h1>
       </div>
       <div className="service-pages">
         <div class="card">
@@ -19,7 +19,7 @@ const Service = () => {
           </div>
         </div>
         <div class="card">
-        <i class="fa-solid fa-volume-high service-icon p-4 m-2 "></i>
+          <i class="fa-solid fa-volume-high service-icon p-4 m-2 "></i>
           <p class="card-title">Cansultancy</p>
           <p class="small-desc">
             We design professional looking yet simple websites. Our designs are

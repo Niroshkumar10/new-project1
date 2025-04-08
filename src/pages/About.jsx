@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import Myimage from "../assets/vision.jpeg";
+import Myimage from "../assets/vision.png";
 // import Home from "../pages/Home";
 import Image from "../assets/mission.jpeg";
 export const About = () => {
@@ -21,6 +21,7 @@ export const About = () => {
               worldwide."
             </p>
           </div>
+
           <div className="about-mission">
             <img src={Image} alt="Image" width={475} height={200} />
             <p>
@@ -38,3 +39,4 @@ export const About = () => {
 };
 
 export default About;
+

@@ -3,10 +3,12 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <span className="footer-text">
-          © {new Date().getFullYear()} StartupName. All rights reserved.
+    <footer className="footer">oter-contain
+      <div className="foer">
+        <span className="footer-text text-center">
+          © {new Date().getFullYear()} StartupName. All rights reserved. <br />
+          smarthub@gmail.com <br />
+          7564738902 <br />
         </span>
       </div>
      
