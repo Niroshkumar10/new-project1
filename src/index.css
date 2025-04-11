@@ -4,133 +4,45 @@
     height: 100%;
     margin-top: 120px;
 }
-.navbar{
-  /* display: grid;
-  flex-wrap: wrap;
-  justify-content: stretch;
-  align-items: stretch; */
+
+.nav-li{
+color:#43005c;  
+font-size: 20px;
 }
-a {
+.nav-li{
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   width: 150px;
   padding-top: 10px;
   height: 3em;
-  border-radius: 30em;
+  border-radius: 20px;
   font-family: inherit;
   border: none;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-}
-
- a::before {
-  content: '';
-  width: 0;
-  height: 3em;
-  border-radius: 30em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
-  transition: .5s ease;
-  color: #0fd850;
-  display: block;
-  z-index: -1;
- }
- 
- a:hover::before {
-  width: 9em;
- }
-/* From Uiverse.io by LightAndy1 */ 
-.group {
-  display: flex;
-  line-height: 28px;
-  align-items: center;
-  position: relative;
-  max-width: 190px;
-}
-
-.input {
-  font-family: "Montserrat", sans-serif;
-  width: 100%;
-  height: 45px;
-  padding-left: 2.5rem;
-  box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #0fd850;
-  border-radius: 12px;
   
-  background-color: #b9efff;
-  outline: none;
-  color: #0fd850;
-  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
-  cursor: text;
-  z-index: 0;
 }
 
-.input::placeholder {
-  color: #0fd850;
-}
 
-.input:hover {
-  box-shadow: 0 0 0 2.5px #2f303d, 0px 0px 25px -15px #000;
-}
+ .nav-li:hover::before {
+  width: 9em;
+  color: #1d1b4b;
+ }
+.nav-li.active{
+  color:#0fd850;
 
-.input:active {
-  transform: scale(0.95);
+  font-weight: bold;
 }
-
-.input:focus {
-  box-shadow: 0 0 0 2.5px #2f303d;
-}
-.search-icon {
-  position: absolute;
-  left: 1rem;
-  fill: #1d1b4b;
-  width: 1rem;
-  height: 1rem;
-  pointer-events: none;
-  z-index: 1;
-}
-#filter-icon {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-  max-height: 40px;
-  max-width: 38px;
-  height: 100%;
-  width: 100%;
-
-  isolation: isolate;
-  overflow: hidden;
-  /* Border Radius */
-  border-radius: 10px;
-  background: linear-gradient(180deg, #161329, black, #1d1b4b);
-  border: 1px solid transparent;
-}
-.filterBorder {
-  height: 42px;
-  width: 40px;
-  position: absolute;
-  overflow: hidden;
-  top: 7px;
-  right: 7px;
-  border-radius: 10px;
-}
-
 
 li{
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 .navbar{
-    background-color:#baf8ea;
+    background-color:#D1D5DB;
     color: #43005c; 
     position: fixed;
     bottom: 50px;
@@ -141,6 +53,12 @@ li{
     display: flex;
     justify-content: space-be;
 }
+.nev-heading {
+  
+  padding-bottom: 25px;
+}
+
+
 i{
     color: #baf8ea;
     border-radius: 5px;
@@ -151,6 +69,8 @@ i{
     display: flex;
     justify-content: space-evenly;
     margin: 50px;
+    height: 100%;
+    margin-bottom: 40px;
     height: 100%;
     /* background-color: #D1D5DB; */
 }
@@ -163,13 +83,22 @@ i{
 .home-info h1{
     text-align: start;
     /* margin: 20px; */
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 20px;
 }
 .home-info p{
     font-size: 20px;
     margin: 20px 0px;
 }
+.home-image{
+  background-image: url("./src/assets/hamepage.png");
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: -10px 8px 0px rgb(196 181 253);
+}
+
 /* From Uiverse.io by Matilemak */ 
 .animated-button {
   margin-top: 50px;
@@ -260,21 +189,10 @@ i{
   opacity: 1;
 }
 
-.home-image{
-    /* width: 500px; */
-    width: 45%;
-    height: 440px;
-    background-image: url("./src/assets/hamepage.png");
-    box-shadow: -10px 8px 0px rgb(196 181 253);;
-    /* border: 2px solid black; */
-    background-repeat:no-repeat;
-    background-size: cover;
-    
-}
-
 .about-heading{
     color:#43005c;
     text-align: center;
+    margin-top: 50px;
 }
 
 .about{
@@ -291,17 +209,17 @@ i{
     font-size: 20px;
     backdrop-filter: blur(10px);
     color: #0d1117;
-    font-weight: bolder;
+    
 }
 .about-mission{
-    width: 500px;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    height: 400px;
+    width: 600px;
+    /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    height: 400px; */
     padding: 10px;
     margin: 50px;
     color: #0d1117;
     backdrop-filter: blur(10px);
-    font-weight: bolder;
+    
     font-size: 20px;
 }
 .service-headline{
@@ -371,7 +289,7 @@ i{
 .card {
   display: block;
   position: relative;
-  max-width: 350px;
+  max-width: 400px;
   max-height: 320px;
   background-color: #f2f8f9;
   border-radius: 10px;
