@@ -1,62 +1,80 @@
 import React from "react";
 import "../index.css";
-import Myimage from "../assets/vision.png";
-// import Home from "../pages/Home";
-import Image from "../assets/mission.jpeg";
 export const About = () => {
   return (
     <>
       {/* <Home/> */}
-      <div className="ab">
+      <div className="ab"  data-aos="fade-up">
         <div className="about-heading">
           <h1>About Us</h1>
         </div>
-        <div className="about">
-          <div className="about-vision">
-
+        <div className="about-mission" >
+          <div className="about-container">
+            <p>
+              Welcome to <strong>StartUp Co</strong> – where ideas become
+              reality. We are a passionate team of developers, designers, and
+              thinkers focused on creating digital solutions that solve
+              real-world problems. Our mission is to empower startups and
+              businesses with modern, user-friendly, and responsive web
+              applications. Whether you're looking to build a brand, launch a
+              product, or scale your service, we’re here to bring your vision to
+              life. At StartUp Co, we believe in innovation, collaboration, and
+              continuous learning. We're committed to delivering quality,
+              transparency, and technology that drives success.
+            </p>
           </div>
-
-          <div className="about-mission">
-            <div className="about-container">
-              <h2>About Us</h2>
+        </div>
+        <div className="about" data-aos="fade-left">   
+            <div class="card1">
+              <h2>Our Mission</h2>
               <p>
-                Welcome to <strong>StartUp Co</strong> – where ideas become
-                reality. We are a passionate team of developers, designers, and
-                thinkers focused on creating digital solutions that solve
-                real-world problems.
+                At our mission is to provide comprehensive IT solutions that
+                meet the unique needs of our clients. We strive to bridge the
+                gap between technology and business, ensuring that our clients
+                can leverage the power of IT to achieve their goals.
               </p>
-
-              <p>
-                Our mission is to empower startups and businesses with modern,
-                user-friendly, and responsive web applications. Whether you're
-                looking to build a brand, launch a product, or scale your
-                service, we’re here to bring your vision to life.
-              </p>
-
-              <p>
-                At StartUp Co, we believe in innovation, collaboration, and
-                continuous learning. We're committed to delivering quality,
-                transparency, and technology that drives success.
-              </p>
-
-              <p>Let’s build something great together.</p>
             </div>
-            <div style={{ margin: "20px auto", maxWidth: "800px" }}>
-              <h2>Our Location</h2>
-              <div style={{ borderRadius: "12px", overflow: "hidden" }}>
-                <iframe
-                  title="Startup Co Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.9279470492333!2d76.95458281480028!3d11.016844392144503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859c861d82e0f%3A0x1e9319a521b91a06!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1617180507123!5m2!1sen!2sin"
-                  width="100%"
-                  height="400"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+
+            <div class="card1">
+              <div class="values-section">
+                <h2>Our Values</h2>
+                <p>At our core, we value innovation, integrity, and customer-centricity. Innovation drives us to explore new ideas and solutions, ensuring that we remain at the forefront of our industry. Integrity is the foundation of our relationships, guiding us to act honestly and ethically in all our dealings.</p>
               </div>
             </div>
-          </div>
+
+            <div class="card1">
+              <h2>Our Story</h2>
+              <p>
+                StartUp Co was born out of a passion for technology and a desire
+                to help businesses thrive in a digital world. Our founders, we
+                set out to provide solutions that not only address these
+                challenges but also empower businesses to innovate and grow.
+              </p>
+            </div>
+
+            <div class="card1">
+              <h2>Join Us on Our Journey</h2>
+              <p>
+                As we continue to evolve and expand our offerings, we invite you
+                to join us on this StartUp Cojourney. Whether you are a small
+                startup or a large enterprise, is here to support you with the
+                IT solutions you need to succeed.
+              </p>
+            </div>
+        </div>
+        <div className="about-image" data-aos="fade-left">
+         <div className="contents-abt">
+          <h1>Who We Are</h1>
+          <p><b>Introduction</b></p>
+          <p> The first paragraph introduces the organization and its mission, emphasizing the commitment to innovation and client success.</p>
+          <p><b>Background </b></p>
+          <p> The second paragraph provides a brief history of the organization, including its founding year and reputation in the industry.</p>
+          <p><b>Core Values</b></p>
+          <p> The third paragraph highlights the core values that guide the organization, reinforcing the commitment to collaboration and continuous improvement.</p>
+         </div>
+         <div className="image-abt">
+          <img src="./src/assets/abt2.png" alt="" width={400} height={400}/>
+         </div>
         </div>
       </div>
     </>

@@ -5,6 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh -pages-d disk",
     "dev": "vite",
@@ -13,6 +14,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "gh": "^2.8.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

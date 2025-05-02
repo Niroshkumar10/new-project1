@@ -1,3 +1,8 @@
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+import { useEffect } from "react";
+
+
 import React from "react";
 import Navbar from "./components/Navbar.jsx";
 import Home from "./pages/Home.jsx";
@@ -9,6 +14,12 @@ import { Routes,Route } from "react-router-dom";
 
 
 export const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration
+      once: true,     // animation happens only once when scrolling
+    });
+  }, []);
   return (
     <>
     <div className="page-style">

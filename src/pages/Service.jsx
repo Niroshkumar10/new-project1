@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 const Service = () => {
   return (
     <>
+    <div className="div" data-aos="fade-left">
       <div className="service m-3">
         <h1 className="hservice-eadline text-center">Services</h1>
       </div>
@@ -65,7 +66,7 @@ const Service = () => {
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" >
           <i class="fa-solid fa-code service-icon p-4 m-2"></i>
           <p class="card-title">Content Creater</p>
           <p class="small-desc">
@@ -78,6 +79,7 @@ const Service = () => {
         </div>
       </div>
       {/* <Footer/> */}
+      </div>
     </>
   );
 };
